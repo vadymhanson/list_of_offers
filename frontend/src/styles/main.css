@@ -1,8 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic');
+
 * {
     box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.application {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 50px;
 }
 
 body {
     margin: 0;
     font-size: 16px;
+}
+
+h1 {
+    color: #000;
+    font-size: 34px;
+    font-weight: 300;
+}
+
+h2 {
+    margin: 16px 0;
+    color: #828282;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.table {
+    margin-bottom: 8px;
+}
+
+.row {
+    display: flex;
+    border: 2px solid #e8e8e8;
+    border-bottom: 0;
+}
+
+.row:last-child {
+    border-bottom: 4px solid #e8e8e8;
+}
+
+.cell {
+    display: inline-flex;
+}
+
+.customer {
+    margin: 10px;
+    flex-grow: 5;
+}
+
+.info {
+    margin: 10px 0;
+}
+
+.price {
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin: 23px;
+    font-weight: 700;
+}
+.accept {
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.logo {
+    margin: 32px;
+    align-self: center;
+}
+
+.button {
+    justify-self: flex-end;
+    width: 150px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFCD00;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+}
+
+.schedule {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.green {
+    background-color: #44c600;
+}
+
+.red {
+    background-color: #ff4141;
+}
+
+.company {
+    font-size: 13px;
+}
+
+.name {
+    color: #828282;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 600px) {
+    .application {
+        margin: 0 10px;
+    }
+
+    .logo {
+        margin: 16px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .customer-border {
+        width: 100%;
+        border-bottom: 1px solid  #e8e8e8;
+    }
+
+    .price-placement {
+        justify-content: normal;
+    }
 }
